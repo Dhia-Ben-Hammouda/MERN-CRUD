@@ -8,17 +8,20 @@ const Form = ()=>{
   const [lastname , setLastname] = useState("");
   const [age , setAge ] = useState("");
 
-
-
   function submitHandler(e)
   {
     e.preventDefault();
+
+    
+
+
   }
   return (
     <form onSubmit={ submitHandler }>
       <div>
         <label>Email</label>
-        <input 
+        <input
+          type="email" 
           placeholder="Enter Email..." 
           value={email}
           onChange={ (e)=>{setEmail(e.target.value)} }
@@ -27,14 +30,16 @@ const Form = ()=>{
       <div>
         <label>First Name</label>
         <input 
+          type="text"
           placeholder="Enter First Name..."
           value={firstname}
-          onchange={ (e)=>{setFirstname(e.target.value)} }  
+          onChange={ (e)=>{setFirstname(e.target.value)} }  
         />
       </div>
       <div>
         <label>Last Name</label>
         <input 
+          type="text"
           placeholder="Enter Last Name..."
           value={lastname}
           onChange={ (e)=>{setLastname(e.target.value)} }  
@@ -43,6 +48,8 @@ const Form = ()=>{
       <div>
         <label>Age</label>
         <input 
+          type="number"
+          min="0"
           placeholder="Enter Age..."
           value={age}
           onChange={ (e)=>{setAge(e.target.value)} }  

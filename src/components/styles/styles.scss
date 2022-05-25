@@ -14,7 +14,7 @@
 }
 
 .left{
-  width:50%;
+  width:40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,12 @@ form{
     }
   }
 
+  label{
+    color:dodgerblue;
+    margin-bottom: .3rem;
+    font-weight: 700;
+  }
+
   button{
     padding:.8em 2em;
     margin-top:1rem;
@@ -55,8 +61,47 @@ form{
 }
 
 .right{
-  background:gold;
-  width:50%;
+  width:60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    padding:.5rem 1rem;
+    color:white;
+    transition:.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
 }
 
+.users-container{
+  display: flex;
+  flex-direction: column;
+  width:95%;
+
+  .header{
+    color:dodgerblue;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button{
+      width:90%;
+      margin:.1rem;
+    }
+  }
+}
+
+
+table{
+  border-collapse: collapse;
+}
 
